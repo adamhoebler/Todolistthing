@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://adam:test@cluster0.ynnio.mongodb.net/todoListDB?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://<USER><PASSWORD>:test@cluster0.ynnio.mongodb.net/todoListDB?retryWrites=true&w=majority");
 
 const itemsSchema = {
   name: String
